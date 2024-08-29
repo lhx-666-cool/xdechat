@@ -7,7 +7,7 @@ WORKDIR /app
 # 将可执行程序从宿主机复制到容器中的工作目录
 COPY ./main main
 RUN apt update
-RUN apt install ca-certificates
+RUN apt install -y ca-certificates
 # 设置可执行权限
 RUN chmod +x ./main
 
